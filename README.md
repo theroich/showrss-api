@@ -3,7 +3,7 @@ Simple api for [http://showrss.info](http://showrss.info)
 
 ## Install
 ```
-npm isntall showrss-api
+npm install showrss-api
 ```
 ## Find series info
 ```javascript
