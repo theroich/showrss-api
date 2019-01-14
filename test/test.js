@@ -1,6 +1,6 @@
 const {getSeries, getInfoById} = require('../main.js');
 
-async function test(){
+(async function(){
     const series = await getSeries();
     const serie = series[1];
     const serieInfo = await getInfoById(serie.id);
@@ -9,9 +9,9 @@ async function test(){
     }else{
         throw new Error("Series may not be found");
     }
-}
+})().then(console.log).catch(e => console.log(e));
 
 
-test().then(console.log).catch(e => console.log(e));
+
 
 

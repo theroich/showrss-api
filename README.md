@@ -9,18 +9,11 @@ npm isntall showrss-api
 ```javascript
 const {getSeries, getInfoById} = require('../main.js');
 
-async function test(){
-
-    // GET LIST OF SERIES
+(async function(){
     const series = await getSeries();
     const serie = series[1];
-
-    // GET SERIE INFO BY ID
     const serieInfo = await getInfoById(serie.id);
     return `Serie found: ${JSON.stringify(serieInfo,null,2)}`;
-   
-}
-
-
-test().then(console.log).catch(e => console.log(e));
+    
+})().then(console.log).catch(e => console.log(e));
 ```
