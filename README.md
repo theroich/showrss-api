@@ -7,7 +7,7 @@ npm install showrss-api
 ```
 ## Find series info
 ```javascript
-const {getSeries, getInfoById} = require('../main.js');
+const {getSeries, getInfoById} = require('showrss-api');
 
 (async function(){
     const series = await getSeries();
